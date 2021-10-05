@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import LoginPage from '../views/LoginPage.vue'
-import SimChargePage from '../views/SimChargePage.vue'
 import DashBoard from '../views/DashBoard.vue'
 import CreateUsersPage from '../views/admin/CreateUserPage.vue'
 import EditUserPage from '../views/admin/EditUserPage'
@@ -17,14 +16,6 @@ const routes = [
     path: '/dash-board',
     name: 'dashBoard',
     component: DashBoard
-  },
-  {
-    path: '/sim-charge',
-    name: 'simCharge',
-    component: SimChargePage,
-    meta: {
-      role: roles.SIM_CHARGE_USER
-    }
   },
   {
     path: '/create-user',

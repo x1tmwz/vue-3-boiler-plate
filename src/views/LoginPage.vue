@@ -1,7 +1,7 @@
 <template>
     <div class="login-form-container">
         <form class="login-form" @submit="login()">
-            <h1>015 Tools</h1>
+            <h1>Login</h1>
             <input type="text" placeholder="user name" v-model="userName" />
             <input type="password" placeholder="password" v-model="password" />
             <button>Login</button>

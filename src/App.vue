@@ -1,17 +1,20 @@
 <template>
-  <div class="app_container"  v-bind:class="{ 'app_container--auth': $store.getters['auth/isAuth'] }">
-<MainNav v-if="$store.getters['auth/isAuth']" />
+  <div
+    class="app_container"
+    v-bind:class="{ 'app_container--auth': $store.getters['auth/isAuth'] }"
+  >
+    <MainNav v-if="$store.getters['auth/isAuth']" />
     <div class="app">
       <router-view />
     </div>
   </div>
 </template>
 <script>
-import MainNav from './components/navs/MainNav.vue'
+import MainNav from "./components/navs/MainNav.vue";
 export default {
-  name: 'app',
-  components: { MainNav }
-}
+  name: "app",
+  components: { MainNav },
+};
 </script>
 
 <style lang="scss">
@@ -36,11 +39,11 @@ export default {
   position: relative;
 }
 .app_container--auth {
-  justify-content:start;
+  justify-content: start;
   position: relative;
-   @media (max-width:850px) {
-      justify-content:center;
-      flex-direction: column;
+  @media (max-width: 850px) {
+    justify-content: center;
+    flex-direction: column;
   }
 }
 .app {
@@ -49,8 +52,8 @@ export default {
   height: 100%;
   min-height: 90vh;
   margin-left: 2rem;
-  @media (max-width:850px) {
-     margin-left: 0;
+  @media (max-width: 850px) {
+    margin-left: 0;
   }
 }
 </style>
