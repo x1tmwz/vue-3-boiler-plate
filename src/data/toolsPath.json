@@ -1,0 +1,5 @@
+{
+    "simCharge":"/sim-charge",
+    "usersCreate":"/users",
+    "usersLogin":"/users/login"
+}
